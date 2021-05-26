@@ -1,0 +1,9 @@
+services:
+  details:
+    build: .
+    image: ghcr.io/porplatakkom/details:dev
+    ports:
+      - "8080:8080"
+    # CMD:
+    environment:
+      SERVICE_VERSION: v2
